@@ -2,10 +2,19 @@ body {
   font-family: Roboto;
 
 }
+ul {
+  font-size: 14px;
+}
+.h2 {
+  font-size: 44px;
+}
 .firs-name {
   width: 100%;
   height: 600px;
   background-color: #2F303A;
+}
+.fn {
+  font-size: 36px;
 }
 .fst-world {
   color: #2196F3;
