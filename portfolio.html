@@ -4,43 +4,170 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./portfolio.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="container">
+    <div class="header-portfolio-container">
       <header>
         <p>
-          <a href="#" class="logo">Web <span class="logo-span">Studio</span></a>
+          <a href="./index.html" class="logo"
+            >Web <span class="logo-span">Studio</span></a
+          >
         </p>
         <ul class="first-menu">
-          <li>Студія</li>
           <li>
-            Портфоліо
+            <a href="./index.html" class="first-menu-a">Студія</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="first-menu-blue">Портфоліо</a>
             <svg width="78" height="4">
-              <use href="./symbol.svg#palka"></use>
+              <use href="./symbol.svg#vtoraja-palka"></use>
             </svg>
           </li>
-          <li>Контакти</li>
+          <li><a href="#" class="first-menu-a">Контакти</a></li>
         </ul>
-        <ul class="seckond-menu-header">
+        <ul class="seckond-menu">
           <li>
-            <svg width="16" height="12">
-              <use href="./symbol.svg#e-mail"></use>
+            <svg width="16px" height="12px">
+              <use href="./symbol.svg#email"></use>
             </svg>
-            <p>info@devstudio.com</p>
+            info@devstudio.com
           </li>
           <li>
-            <svg width="10" height="16">
-              <use href="./symbol.svg#smartphone"></use>
+            <svg width="10px" height="16px">
+              <use href="./symbol.svg#telephone"></use>
             </svg>
-            <p>+38 096 111 11 11</p>
+            +38 096 111 11 11
           </li>
         </ul>
       </header>
     </div>
+    <div class="portfolio-container">
+      <main>
+        <ul class="main-menu">
+          <li><button class="main-menu-button1">Усі</button></li>
+          <li><button class="main-menu-button2">Веб-сайти</button></li>
+          <li><button class="main-menu-button3">Додатки</button></li>
+          <li><button class="main-menu-button4">Дизайн</button></li>
+          <li><button class="main-menu-button5">Маркетинг</button></li>
+        </ul>
+        <ul class="menu">
+          <li>
+            <img src="./img/img (1).png" alt="" width="370px" />
+            <h3>Технокряк</h3>
+            <p>Веб-сайт</p>
+          </li>
+          <li>
+            <img src="./img/img (2).png" alt="" width="370px" />
+            <h3>Постер New Orlean vs Golden Star</h3>
+            <p>Дизайн</p>
+          </li>
+          <li>
+            <img src="./img/img (3).png" alt="" width="370px" />
+            <h3>Ресторан Seafood</h3>
+            <p>Додаток</p>
+          </li>
+          <li>
+            <img src="./img/img (4).png" alt="" width="370px" />
+            <h3>Проєкт Prime</h3>
+            <p>Маркетинг</p>
+          </li>
+          <li>
+            <img src="./img/img (5).png" alt="" width="370px" />
+            <h3>Проєкт Boxes</h3>
+            <p>Додаток</p>
+          </li>
+          <li>
+            <img src="./img/img (6).png" alt="" width="370px" />
+            <h3>Inspiration has no Borders</h3>
+            <p>Веб-сайт</p>
+          </li>
+          <li>
+            <img src="./img/img (7).png" alt="" width="370px" />
+            <h3>Видання Limited Edition</h3>
+            <p>Дизайн</p>
+          </li>
+          <li>
+            <img src="./img/img (8).png" alt="" width="370px" />
+            <h3>Проєкт LAB</h3>
+            <p>Маркетинг</p>
+          </li>
+          <li>
+            <img src="./img/img (9).png" alt="" width="370px" />
+            <h3>Growing Business</h3>
+            <p>Додаток</p>
+          </li>
+        </ul>
+      </main>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-firsth-group">
+          <p>
+            <a href="#" class="logo"
+              >Web <span class="logo-span-black">Studio</span></a
+            >
+          </p>
+          <ul class="footer-menu-info">
+            <li>
+              <p>м. Київ, пр-т Лесі Українки, 26</p>
+            </li>
+            <li class="dark-text-footer">
+              <p>info@devstudio.com</p>
+            </li>
+            <li class="dark-text-footer">
+              <p>+38 096 111 11 11</p>
+            </li>
+          </ul>
+        </div>
+        <div class="next-group">
+          <h3>приєднуйтесь</h3>
+          <ul class="svg-group-footer">
+            <li>
+              <svg width="20" height="20">
+                <use href="./symbol.svg#instagram"></use>
+              </svg>
+            </li>
+            <li>
+              <svg width="20" height="20">
+                <use href="./symbol.svg#twiter"></use>
+              </svg>
+            </li>
+            <li>
+              <svg width="20" height="20">
+                <use href="./symbol.svg#facebook"></use>
+              </svg>
+            </li>
+            <li>
+              <svg width="20" height="20">
+                <use href="./symbol.svg#linkedin"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="third-group">
+          <h3>Підпишіться на розсилку</h3>
+          <form class="third-group-form" action="">
+            <input
+              class="footer-input"
+              type="email"
+              id="e-mail"
+              name="e-mail"
+              placeholder="E-mail"
+            />
+            <button class="footer-button">
+              Підписатися
+              <svg width="24" height="24">
+                <use href="./symbol.svg#telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
