@@ -1,0 +1,69 @@
+.fifth-section {
+  margin-top: 94px;
+  height: 184px;
+}
+.fifth-section > h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.fifth-section-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 92px;
+  width: 1170px;
+}
+.fifth-section-menu > li {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #afb1b8;
+}
+.fifth-section-menu > li:hover {
+  color: #2196f3;
+  border: 1px solid #2196f3;
+}
+@media (min-width: 481px) and (max-width: 1599px) {
+  .fifth-section {
+    height: 397px;
+    width: 768px;
+    margin-top: 60px;
+    & h2 {
+      margin-top: 0;
+    }
+    &-menu {
+      flex-wrap: wrap;
+      height: 214px;
+      width: 738px;
+      margin: 0;
+      & li {
+        width: 226px;
+        height: 92px;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .fifth-section {
+    width: 480px;
+    height: 519px;
+  }
+  .fifth-section-menu {
+    width: 450px;
+    height: 336px;
+    flex-wrap: wrap;
+    & > li {
+      width: 210px;
+      height: 92px;
+    }
+  }
+}

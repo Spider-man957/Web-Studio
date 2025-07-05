@@ -1,0 +1,234 @@
+header {
+  width: 1170px;
+  display: flex;
+  align-items: center;
+}
+.header__div-nav {
+  width: 933px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header > p {
+  width: 173px;
+}
+.footer-firsth-group {
+  margin-top: -10px;
+}
+.logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+.logo-span {
+  color: black;
+}
+.first-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 281px;
+  height: 16px;
+  margin-left: 93px;
+  box-sizing: border-box;
+}
+.container .first-menu li:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 48px;
+}
+
+.first-menu li:nth-child(1) > svg {
+  margin-top: 19px;
+}
+.first-menu1 {
+  color: #2196f3;
+}
+.first-menu-a {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2%;
+  color: #212121;
+}
+.first-menu-a:hover {
+  animation: color-of-a 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes color-of-a {
+  0% {
+    color: black;
+  }
+  100% {
+    color: #2196f3;
+  }
+}
+.seckond-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 333px;
+  height: 16px;
+  padding: 0;
+  margin-left: 318px;
+}
+.seckond-menu > li {
+  font-size: 14px;
+  font-weight: 500;
+  color: #757575;
+  width: 161px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.seckond-menu > li > svg {
+  margin-right: 10px;
+}
+.seckond-menu > li:hover {
+  color: #2196f3;
+}
+#email,
+#telephone:hover {
+  color: #2196f3;
+}
+#email-path:hover {
+  color: #2196f3;
+}
+.header-portfolio-container {
+  border-bottom: #ececec solid 1px;
+}
+.header-portfolio-container header {
+  margin: 0 auto;
+}
+.header-portfolio-container .first-menu li:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 48px;
+}
+.header-portfolio-container .first-menu li:nth-child(2) svg {
+  margin-top: 19px;
+}
+.header-portfolio-container .first-menu-blue {
+  color: #2196f3;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.menu {
+}
+@media (min-width: 481px) and (max-width: 1599px) {
+  header {
+    width: 768px;
+    & > p {
+      width: auto;
+    }
+  }
+  .header__div-nav {
+    width: 517px;
+    height: 80px;
+    margin-left: 87px;
+  }
+  .logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    width: auto;
+    margin: 0;
+  }
+  .first-menu {
+    width: 283px;
+    box-sizing: border-box;
+    padding: 0;
+    // margin-left: 87px;
+    // margin-right: 96px;
+    display: flex;
+    justify-content: space-between;
+    // margin-top: 0;
+    // margin-bottom: 0;
+    margin: 0;
+    height: 16px;
+    font-size: 14px;
+  }
+  .seckond-menu {
+    width: 138px;
+    margin: 0 0 0 96px;
+    flex-direction: column;
+    height: 38px;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    & > img {
+      width: 14px;
+      height: 10px;
+    }
+    & li {
+      height: 14px;
+      font-size: 12px;
+    }
+  }
+  .first-menu li:nth-child(1) > svg {
+    position: relative;
+    top: 28px;
+    margin-top: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    width: 480px;
+    height: 60px;
+    & p {
+      width: auto;
+      height: auto;
+    }
+  }
+  .logo {
+    width: auto;
+    height: auto;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+  }
+  .first-menu {
+    display: none;
+  }
+  .seckond-menu {
+    display: none;
+  }
+  .header__svg-burger_menu {
+    margin-left: 284px;
+  }
+  .burger {
+    cursor: pointer;
+    z-index: 1001;
+  }
+  .menu {
+    display: none;
+    // position: absolute;
+    // top: 50px;
+    // right: 10px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  .menu.active {
+    display: block;
+  }
+}
